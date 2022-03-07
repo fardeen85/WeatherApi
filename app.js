@@ -30,7 +30,7 @@ app.get("/weather",(req,res)=>{
     })
 })
 
-app.listen(port,"192.168.0.108",()=>{
+app.listen(port,()=>{
 
     console.log("Server running at port 8000")
 })
