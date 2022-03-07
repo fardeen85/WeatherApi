@@ -2,6 +2,8 @@ const express = require('express')
 const app = express()
 const request = require('requests');
 
+const port = process.env.PORT || 36018
+
 app.get("/weather",(req,res)=>{
 
    
@@ -28,7 +30,7 @@ app.get("/weather",(req,res)=>{
     })
 })
 
-app.listen(36018,"192.168.0.108",()=>{
+app.listen(port,"192.168.0.108",()=>{
 
     console.log("Server running at port 8000")
 })
