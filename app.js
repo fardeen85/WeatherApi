@@ -4,7 +4,7 @@ const request = require('requests');
 
 const port = process.env.PORT || 36018
 
-app.get("/weather",(req,res)=>{
+app.get("/",(req,res)=>{
 
    
     request('http://api.openweathermap.org/data/2.5/weather?lat=24.8546842&lon=67.0207055&appid=3e8beb159f8f74a35987a04133a2e986')
